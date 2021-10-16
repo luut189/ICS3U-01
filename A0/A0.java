@@ -1,6 +1,7 @@
 /*
-
-
+Name: Tuong Luu
+Date: 15th October, 2021
+Description: Variables Operations Math
 */
 
 
@@ -17,6 +18,12 @@ public static void rectangle(double width, double length) {
   System.out.println("Length = " + length + "m");
   System.out.println("Width = " + width + "m");
   System.out.println("Area = " + areaOfRectangle + "cm" +sq);
+} //method to calculate area of rectangle
+
+public static void netPay(double h, double w, double i, double t) {
+  double n = (h * w - i) - t * (h * w - i);
+  System.out.println("$" + n + " = " + "(" + h + "*" + w + "-" + i  + ") " + "-" + t + "*" + "(" + h + "*" + w + "-" + i + ")");
+
 }
 
 public static void main(String[] args){
@@ -32,6 +39,8 @@ public static void main(String[] args){
   //Q3 Area of rectangle
   rectangle(4.8, 5.7);
 
+  //Q4 Net Pay
+  netPay(40, 13, 4, 0.22);
   
  }// close main
 }// close class
