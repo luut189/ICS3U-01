@@ -3,6 +3,7 @@ Name: Tuong Luu
 Date: 15th October, 2021
 Description: Variables Operations Math
 */
+
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -70,10 +71,11 @@ public static void main(String[] args){
   double price = 12.49; //declare and initialize the price of the shirt
   double given = 20.0; //declare and initialize the given cash
   double tax = 0.13*price; //declare and initialize the tax
+  double subTotal = price; //declare and initialize the subtotal
   double total = price + tax; //declare and initialize the total amount after tax
   double change = given - total; //declare and initialize the amount of change
 
-  String[] formatted = {dF.format(change), dF.format(given), dF.format(total), dF.format(tax)}; //array of strings to store the formatted double
+  String[] formatted = {dF.format(change), dF.format(given), dF.format(total), dF.format(tax), dF.format(subTotal)}; //array of strings to store the formatted double
 
   System.out.println("\nQuestion 6: Bill of sale\n"); //print question
 
@@ -85,6 +87,7 @@ public static void main(String[] args){
   System.out.println("| ------------------------------- |");
   System.out.println("| Shirt          01        $"+price+" |");
   System.out.println("| ------------------------------- |");
+  System.out.println("| Subtotal                 "+formatted[4]+" |");
   System.out.println("| Tax                       "+formatted[3]+" |");
   System.out.println("| Total                    "+formatted[2]+" |");
   System.out.println("|                                 |");
