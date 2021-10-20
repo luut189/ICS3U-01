@@ -23,7 +23,7 @@ public static void rectangle(double width, double length) {
 } //method to calculate area of rectangle
 
 public static void netPay(double h, double w, double i, double t) {
-  double n = (h * w - i) - t * (h * w - i); //calulate
+  double n = (h * w - i) - t * (h * w - i); //calculate
   System.out.println("The net pay is " + "$" + n + " = " + "(" + h + "*" + w + "-" + i  + ") " + "-" + t + "*" + "(" + h + "*" + w + "-" + i + ")"); //print
 
 }
