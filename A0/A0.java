@@ -4,12 +4,12 @@ Date: 15th October, 2021
 Description: Variables Operations Math
 */
 
-import java.text.DecimalFormat;
-import java.util.*;
+import java.text.DecimalFormat; //import function to format double to have two decimals only
+import java.util.*; //add a bunch of stuff
 
 public class A0 {
 
-  public static char sq = 178;
+  public static char sq = 178; //to have the square symbol
 
 public static double areaOfCircle(double r) {
   return 3.14* (r*r);
